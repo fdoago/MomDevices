@@ -92,6 +92,8 @@
     <Compile Include="services\ServiceConnection.cs" />
     <Compile Include="services\ServiceConnectedEventArgs.cs" />
     <Compile Include="services\ServiceClass.cs" />
+    <Compile Include="models\MomDeviceDTO.cs" />
+    <Compile Include="ApiClient\MomDevicesRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
