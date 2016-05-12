@@ -32,6 +32,14 @@ namespace Vinos
 			//Objeto que guarda y recupera los datos guardados en localstorage
 			userLocalStore = new UserLocalStore(this);
 
+
+
+			// Obtenemos los elementos del layout.
+			email = FindViewById<EditText>(Resource.Id.textEmailAddress);
+			password = FindViewById<EditText>(Resource.Id.passInput);
+			sendLogin = FindViewById<Button>(Resource.Id.sendLogin);
+			message = FindViewById<TextView> (Resource.Id.message);
+
 			if (userLocalStore.getLoggedInUser() != null) {
 				if (userLocalStore.checkRemember () == true) {
 					User remembered = userLocalStore.getLoggedInUser ();
@@ -40,11 +48,6 @@ namespace Vinos
 				}
 			}
 
-			// Obtenemos los elementos del layout.
-			email = FindViewById<EditText>(Resource.Id.textEmailAddress);
-			password = FindViewById<EditText>(Resource.Id.passInput);
-			sendLogin = FindViewById<Button>(Resource.Id.sendLogin);
-			message = FindViewById<TextView> (Resource.Id.message);
 			sendLogin.Click += sendLoginEventFunc;
 		}
 
@@ -55,7 +58,7 @@ namespace Vinos
 			user = userRequest.login (email.Text, password.Text);
 			if(user != null){
 
-				userStorage = new User(user.id, email.Text,password.Text);
+				userStorage = new User(user.id, email.Text, password.Text);
 				logUserIn (userStorage);
 
 				MainActivityIntent = new Intent(this, typeof(MainActivity));
