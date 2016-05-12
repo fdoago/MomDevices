@@ -94,6 +94,7 @@
     <Compile Include="services\ServiceClass.cs" />
     <Compile Include="models\MomDeviceDTO.cs" />
     <Compile Include="ApiClient\MomDevicesRequest.cs" />
+    <Compile Include="Adapters\MomDeviceAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -114,6 +115,8 @@
     <AndroidResource Include="Resources\layout\vinosDetailActivity.axml" />
     <AndroidResource Include="Resources\layout\OrdenAddConfirmation.axml" />
     <AndroidResource Include="Resources\layout\MomDevices.axml" />
+    <AndroidResource Include="Resources\raw\alarm.mp3" />
+    <AndroidResource Include="Resources\layout\SecondActivity.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -123,6 +126,7 @@
     <Folder Include="helpers\" />
     <Folder Include="Adapters\" />
     <Folder Include="services\" />
+    <Folder Include="Resources\raw\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.2.1\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.2.1\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

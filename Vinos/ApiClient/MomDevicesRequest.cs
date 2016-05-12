@@ -2,14 +2,26 @@
 using System.Collections.Generic;
 using RestSharp;
 using Newtonsoft.Json;
-using Vinos;
+using Vinos.Models;
 
-namespace Vinos
+namespace Vinos.Requests
 {
 	public class MomDevicesRequest
 	{
 		public MomDevicesRequest ()
 		{
+		}
+
+		public void turnOf(String mac){
+			try{
+				RestClient cliente = new RestClient("http://vacaciones-todo-incluido.com/");
+				RestRequest request = new RestRequest("api/v1/giroescopio/turnOff/" + mac, Method.GET);
+				request.RequestFormat = DataFormat.Json;
+				var Result = cliente.Execute(request);
+				//resultado = JsonConvert.DeserializeObject<Boolean>(Result.Content);
+			}catch(Exception ex){
+				Console.Out.WriteLine("vinos Error: {0}", ex.Message);
+			}
 		}
 
 		public List<MomDeviceDTO> get (){

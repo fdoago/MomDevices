@@ -42,6 +42,7 @@ namespace Vinos
 			user = userRequest.login (email.Text, password.Text);
 			if(user != null){
 				MainActivityIntent = new Intent(this, typeof(MainActivity));
+				//MainActivityIntent = new Intent(this, typeof(MomDeivcesActivity));
 				this.StartActivity(MainActivityIntent);
 			}else{
 				message.Text = "Error en login";

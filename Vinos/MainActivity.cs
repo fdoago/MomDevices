@@ -16,7 +16,7 @@ using System.Threading;
 
 namespace Vinos
 {
-	[Activity (Label = "Categorias", Theme = "@style/Theme.AppCompat.Light", Icon = "@mipmap/icon")]                        
+	[Activity (Label = "MomDevices", Theme = "@style/Theme.AppCompat.Light", Icon = "@mipmap/icon")]                        
 	public class MainActivity : ActionBarActivity
 	{
 		private ListView ListCategoria;
@@ -68,16 +68,11 @@ namespace Vinos
 				this.StartActivity(vinosIntent);
 			};
 
-			Thread listener = new Thread (() => 
-				{
-					App.StartLocationService();
-				});
-			listener.Start();
-	
+			App.StartLocationService();
+
 			// Start the location service:
 			//await Task.Run (() => App.StartLocationService());
-
-			//StartService(new Intent(this, typeof(MyService)));
+		//StartService(new Intent(this, typeof(MyService)));
 		}
 	
 

@@ -2,12 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:minWidth="25px"
-    android:minHeight="25px">
-    <Button
-        android:text="Alerta"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/momDeviceList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/launchButton" />
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="#818181"
+        android:dividerHeight="1dp"
+        android:background="#E3F2FD" />
 </LinearLayout>

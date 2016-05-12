@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Vinos
+namespace Vinos.Models
 {
 	public class MomDeviceDTO
 	{
@@ -12,5 +12,7 @@ namespace Vinos
 		public string acelerometro_y {get; set;}
 		public string acelerometro_z {get; set;}
 		public string mac {get; set;}
+		public Boolean active { get; set;}
+		public Boolean status { get; set;}
 	}
 }
