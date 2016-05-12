@@ -22,6 +22,9 @@ namespace Vinos
 		private TextView fecha;
 		private TextView status;
 		private ordenDTO orden;
+		//Para recuperar los datos guardados
+		UserLocalStore userLocalStore;
+		User userStorage;
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
@@ -31,6 +34,9 @@ namespace Vinos
 			id_orden = FindViewById<TextView> (Resource.Id.id_orden);
 			fecha = FindViewById<TextView> (Resource.Id.fecha);
 			status = FindViewById<TextView> (Resource.Id.status);
+			//Inicializamos las variables que recuperan el id
+			userLocalStore = new UserLocalStore(this);
+			userStorage = userLocalStore.getLoggedInUser();
 			orden =  JsonConvert.DeserializeObject<ordenDTO> (Intent.GetStringExtra ("orden"));
 			id_orden.Text += orden.id.ToString();
 			fecha.Text += orden.fecha.ToString();

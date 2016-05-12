@@ -29,6 +29,9 @@ namespace Vinos
 		private Button agregar;
 		private Intent AddWineIntent;
 		private ordenDTO orden;
+		//Para recuperar los datos guardados
+		UserLocalStore userLocalStore;
+		User userStorage;
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
@@ -44,6 +47,9 @@ namespace Vinos
 			img = FindViewById<ImageView> (Resource.Id.img);
 			price = FindViewById<TextView> (Resource.Id.price);
 			agregar = FindViewById<Button> (Resource.Id.agregar);
+			//Inicializamos las variables que recuperan el id
+			userLocalStore = new UserLocalStore(this);
+			userStorage = userLocalStore.getLoggedInUser();
 
 			name.Text = vino.name;
 			year.Text = vino.year;
@@ -55,7 +61,7 @@ namespace Vinos
 
 			agregar.Click+= delegate(object sender, EventArgs e) {
 				ordenRequest ordenRequestObj = new ordenRequest();
-				orden = ordenRequestObj.addProduct(1,vino.id);
+				orden = ordenRequestObj.addProduct(userStorage.user_id,vino.id);
 				AddWineIntent = new Intent(this, typeof(OrdenAddConfirmationActivity));
 				AddWineIntent.PutExtra("orden", JsonConvert.SerializeObject(orden));
 				this.StartActivity(AddWineIntent);

@@ -95,6 +95,8 @@
     <Compile Include="models\MomDeviceDTO.cs" />
     <Compile Include="ApiClient\MomDevicesRequest.cs" />
     <Compile Include="Adapters\MomDeviceAdapter.cs" />
+    <Compile Include="helpers\UserLocalStore.cs" />
+    <Compile Include="models\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
