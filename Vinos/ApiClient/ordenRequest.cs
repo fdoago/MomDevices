@@ -62,6 +62,23 @@ namespace Vinos
 				return null;
 			}
 		}
+
+		public void confirmOrder (int id_order, int id_user)
+		{
+			try{
+				RestClient cliente = new RestClient(ApiUrl);
+				List<ordenVinosDTO> resultado = new List<ordenVinosDTO>();
+				RestRequest request = new RestRequest("api/v1/orden/confirmacion", Method.POST);
+				request.RequestFormat = DataFormat.Json;
+				request.AddParameter ("id", id_order);
+				request.AddParameter ("id_user", id_user);
+				var Result = cliente.Execute(request);
+
+			}catch(Exception ex){
+				Console.Out.WriteLine("Confirm order Error: {0}", ex.Message);
+				return null;
+			}
+		}
 	}
 }
 

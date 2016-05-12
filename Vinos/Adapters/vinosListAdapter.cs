@@ -63,7 +63,7 @@ namespace Vinos
 			{
 				view = context.LayoutInflater.Inflate(Android.Resource.Layout.SimpleListItem1, null);
 			}
-			view.FindViewById<TextView> (Android.Resource.Id.Text1).Text = vinos [position].name.ToString ();
+			view.FindViewById<TextView> (Android.Resource.Id.Text1).Text = vinos [position].name.ToString () + ". Cantidad: " + vinos [position].cantidad.ToString () + ". Precio: " + vinos [position].price.ToString ();
 			return view;
 		}
 

@@ -22,8 +22,12 @@ namespace Vinos
 		private ListView ListOrder;
 		private vinosListAdapter vinosListAdapter;
 		private List<string> VinosListaDataSet;
+		private Button confirmar;
 		private Intent vinosIntent;
 		private int order;
+		//Para recuperar los datos guardados
+		UserLocalStore userLocalStore;
+		User userStorage;
 
 		// Binder
 
@@ -49,11 +53,15 @@ namespace Vinos
 			base.OnCreate (bundle);
 			SetContentView (Resource.Layout.vinosConfirmation);
 			order = Intent.GetIntExtra ("order_id", 0);
+			//Inicializamos las variables que recuperan el id
+			userLocalStore = new UserLocalStore(this);
+			userStorage = userLocalStore.getLoggedInUser();
 			ordenRequest ordenRequest = new ordenRequest ();
 			List<ordenVinosDTO> listaVinos = new List<ordenVinosDTO> ();
 			VinosListaDataSet = new List<string> ();
 			listaVinos = ordenRequest.getOrderList (order);
 			ListOrder = FindViewById<ListView> (Resource.Id.ListOrder);
+			confirmar = FindViewById<Button> (Resource.Id.confirm);
 			ListOrder.Tag = 0;
 
 			// Custom adapter
@@ -67,7 +75,14 @@ namespace Vinos
 				
 			};
 
-			App.StartLocationService();
+			confirmar.Click+= delegate(object sender, EventArgs e) {
+				ordenRequest ordenRequestObj = new ordenRequest();
+				ordenRequestObj.confirmOrder(order, userStorage.user_id);
+				Intent Main = new Intent (this, typeof(MainActivity));
+				this.StartActivity(Main);
+			};
+
+
 
 			// Start the location service:
 			//await Task.Run (() => App.StartLocationService());
