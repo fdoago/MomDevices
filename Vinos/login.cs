@@ -54,7 +54,7 @@ namespace Vinos
 			userDTO user = new userDTO ();
 			user = userRequest.login (email.Text, password.Text);
 			if(user != null){
-				userStorage = new User(user.id, user.nickname, user.passwosrd);
+				userStorage = new User(user.id, email.Text,password.Text);
 				logUserIn (user);
 				MainActivityIntent = new Intent(this, typeof(MainActivity));
 				//MainActivityIntent = new Intent(this, typeof(MomDeivcesActivity));
