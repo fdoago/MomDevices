@@ -22,6 +22,8 @@ namespace Vinos
 		public void storeUserData(User user) {
 			mPrefsEditor = mSharedPrefs.Edit ();
 			mPrefsEditor.PutInt("user_id", user.user_id);
+			mPrefsEditor.PutString("nickname", user.nickname);
+			mPrefsEditor.PutString ("password", user.password);
 			mPrefsEditor.Commit();
 		}
 
@@ -67,7 +69,9 @@ namespace Vinos
 			}
 
 			int user_id = mSharedPrefs.GetInt("user_id", 0);
-			User user = new User(user_id);
+			String nickname = mSharedPrefs.GetString("nickname", "");
+			String password = mSharedPrefs.GetString("password", "");
+			User user = new User(user_id, nickname, password);
 			return user;
 		}
 	}
