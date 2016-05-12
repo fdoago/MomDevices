@@ -1507,8 +1507,8 @@ namespace Vinos
 			// aapt resource value: 0x7f0d0024
 			public const int activity_chooser_view_content = 2131558436;
 			
-			// aapt resource value: 0x7f0d0077
-			public const int agregar = 2131558519;
+			// aapt resource value: 0x7f0d0078
+			public const int agregar = 2131558520;
 			
 			// aapt resource value: 0x7f0d0030
 			public const int alertTitle = 2131558448;
@@ -1524,6 +1524,9 @@ namespace Vinos
 			
 			// aapt resource value: 0x7f0d005a
 			public const int cancel_action = 2131558490;
+			
+			// aapt resource value: 0x7f0d0076
+			public const int cantidad = 2131558518;
 			
 			// aapt resource value: 0x7f0d0055
 			public const int checkBox1 = 2131558485;
@@ -1606,8 +1609,8 @@ namespace Vinos
 			// aapt resource value: 0x7f0d0026
 			public const int image = 2131558438;
 			
-			// aapt resource value: 0x7f0d0076
-			public const int img = 2131558518;
+			// aapt resource value: 0x7f0d0077
+			public const int img = 2131558519;
 			
 			// aapt resource value: 0x7f0d0064
 			public const int info = 2131558500;
