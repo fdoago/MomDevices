@@ -76,7 +76,7 @@ namespace Vinos
 
 			}catch(Exception ex){
 				Console.Out.WriteLine("Confirm order Error: {0}", ex.Message);
-				return null;
+
 			}
 		}
 	}
