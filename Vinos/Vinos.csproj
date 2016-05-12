@@ -99,6 +99,8 @@
     <Compile Include="models\User.cs" />
     <Compile Include="helpers\ImageHelper.cs" />
     <Compile Include="models\ordenVinosDTO.cs" />
+    <Compile Include="vinosConfirmation.cs" />
+    <Compile Include="Adapters\vinosListAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -121,6 +123,7 @@
     <AndroidResource Include="Resources\layout\MomDevices.axml" />
     <AndroidResource Include="Resources\raw\alarm.mp3" />
     <AndroidResource Include="Resources\layout\SecondActivity.axml" />
+    <AndroidResource Include="Resources\layout\vinosConfirmation.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

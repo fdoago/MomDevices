@@ -1,6 +1,7 @@
 ﻿using System;
 using RestSharp;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace Vinos
 {
@@ -46,18 +47,18 @@ namespace Vinos
 			}
 		}
 
-		public ordenDTO getOrder2 (int id_user)
+		public List<ordenVinosDTO> getOrderList (int id_order)
 		{
 			try{
 				RestClient cliente = new RestClient(ApiUrl);
-				ordenDTO resultado = new ordenDTO();
-				RestRequest request = new RestRequest("api/v1/orden/ordenactiva/" + id_user.ToString(), Method.GET);
+				List<ordenVinosDTO> resultado = new List<ordenVinosDTO>();
+				RestRequest request = new RestRequest("api/v1/orden/productosorden/" + id_order.ToString(), Method.GET);
 				request.RequestFormat = DataFormat.Json;
 				var Result = cliente.Execute(request);
-				resultado = JsonConvert.DeserializeObject<ordenDTO>(Result.Content);
+				resultado = JsonConvert.DeserializeObject<List<ordenVinosDTO>>(Result.Content);
 				return resultado;
 			}catch(Exception ex){
-				Console.Out.WriteLine("Retrieve Order Error: {0}", ex.Message);
+				Console.Out.WriteLine("Retrieve Order List Error: {0}", ex.Message);
 				return null;
 			}
 		}

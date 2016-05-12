@@ -21,6 +21,8 @@ namespace Vinos
 		private TextView id_orden;
 		private TextView fecha;
 		private TextView status;
+		private Button confirmar;
+		private Intent confirmationIntent;
 		private ordenDTO orden;
 		//Para recuperar los datos guardados
 		UserLocalStore userLocalStore;
@@ -34,6 +36,7 @@ namespace Vinos
 			id_orden = FindViewById<TextView> (Resource.Id.id_orden);
 			fecha = FindViewById<TextView> (Resource.Id.fecha);
 			status = FindViewById<TextView> (Resource.Id.status);
+			confirmar = FindViewById<Button> (Resource.Id.confirmacionOrden);
 			//Inicializamos las variables que recuperan el id
 			userLocalStore = new UserLocalStore(this);
 			userStorage = userLocalStore.getLoggedInUser();
@@ -41,6 +44,13 @@ namespace Vinos
 			id_orden.Text += orden.id.ToString();
 			fecha.Text += orden.fecha.ToString();
 			status.Text += orden.status.ToString ();
+			confirmar.Click+= delegate(object sender, EventArgs e) {
+				confirmationIntent = new Intent (this, typeof(vinosConfirmation));
+				Bundle order_id = new Bundle ();
+				order_id.PutInt ("order_id", orden.id);
+				confirmationIntent.PutExtras (order_id);
+				this.StartActivity(confirmationIntent);
+			};
 		}
 
 

@@ -1456,6 +1456,9 @@ namespace Vinos
 			// aapt resource value: 0x7f0d0057
 			public const int ListCategoria = 2131558487;
 			
+			// aapt resource value: 0x7f0d006f
+			public const int ListOrder = 2131558511;
+			
 			// aapt resource value: 0x7f0d006e
 			public const int ListVinos = 2131558510;
 			
@@ -1507,8 +1510,8 @@ namespace Vinos
 			// aapt resource value: 0x7f0d0024
 			public const int activity_chooser_view_content = 2131558436;
 			
-			// aapt resource value: 0x7f0d0078
-			public const int agregar = 2131558520;
+			// aapt resource value: 0x7f0d0079
+			public const int agregar = 2131558521;
 			
 			// aapt resource value: 0x7f0d0030
 			public const int alertTitle = 2131558448;
@@ -1525,8 +1528,8 @@ namespace Vinos
 			// aapt resource value: 0x7f0d005a
 			public const int cancel_action = 2131558490;
 			
-			// aapt resource value: 0x7f0d0076
-			public const int cantidad = 2131558518;
+			// aapt resource value: 0x7f0d0077
+			public const int cantidad = 2131558519;
 			
 			// aapt resource value: 0x7f0d0055
 			public const int checkBox1 = 2131558485;
@@ -1546,8 +1549,8 @@ namespace Vinos
 			// aapt resource value: 0x7f0d0031
 			public const int contentPanel = 2131558449;
 			
-			// aapt resource value: 0x7f0d0072
-			public const int country = 2131558514;
+			// aapt resource value: 0x7f0d0073
+			public const int country = 2131558515;
 			
 			// aapt resource value: 0x7f0d0037
 			public const int custom = 2131558455;
@@ -1561,8 +1564,8 @@ namespace Vinos
 			// aapt resource value: 0x7f0d0027
 			public const int default_activity_button = 2131558439;
 			
-			// aapt resource value: 0x7f0d0074
-			public const int description = 2131558516;
+			// aapt resource value: 0x7f0d0075
+			public const int description = 2131558517;
 			
 			// aapt resource value: 0x7f0d006a
 			public const int detallesOrden = 2131558506;
@@ -1588,8 +1591,8 @@ namespace Vinos
 			// aapt resource value: 0x7f0d0068
 			public const int fecha = 2131558504;
 			
-			// aapt resource value: 0x7f0d0071
-			public const int grapes = 2131558513;
+			// aapt resource value: 0x7f0d0072
+			public const int grapes = 2131558514;
 			
 			// aapt resource value: 0x7f0d0004
 			public const int home = 2131558404;
@@ -1609,8 +1612,8 @@ namespace Vinos
 			// aapt resource value: 0x7f0d0026
 			public const int image = 2131558438;
 			
-			// aapt resource value: 0x7f0d0077
-			public const int img = 2131558519;
+			// aapt resource value: 0x7f0d0078
+			public const int img = 2131558520;
 			
 			// aapt resource value: 0x7f0d0064
 			public const int info = 2131558500;
@@ -1645,8 +1648,8 @@ namespace Vinos
 			// aapt resource value: 0x7f0d0014
 			public const int multiply = 2131558420;
 			
-			// aapt resource value: 0x7f0d006f
-			public const int name = 2131558511;
+			// aapt resource value: 0x7f0d0070
+			public const int name = 2131558512;
 			
 			// aapt resource value: 0x7f0d001f
 			public const int never = 2131558431;
@@ -1663,8 +1666,8 @@ namespace Vinos
 			// aapt resource value: 0x7f0d0054
 			public const int passInput = 2131558484;
 			
-			// aapt resource value: 0x7f0d0075
-			public const int price = 2131558517;
+			// aapt resource value: 0x7f0d0076
+			public const int price = 2131558518;
 			
 			// aapt resource value: 0x7f0d0005
 			public const int progress_circular = 2131558405;
@@ -1675,8 +1678,8 @@ namespace Vinos
 			// aapt resource value: 0x7f0d003b
 			public const int radio = 2131558459;
 			
-			// aapt resource value: 0x7f0d0073
-			public const int region = 2131558515;
+			// aapt resource value: 0x7f0d0074
+			public const int region = 2131558516;
 			
 			// aapt resource value: 0x7f0d0015
 			public const int screen = 2131558421;
@@ -1813,8 +1816,8 @@ namespace Vinos
 			// aapt resource value: 0x7f0d0013
 			public const int wrap_content = 2131558419;
 			
-			// aapt resource value: 0x7f0d0070
-			public const int year = 2131558512;
+			// aapt resource value: 0x7f0d0071
+			public const int year = 2131558513;
 			
 			static Id()
 			{
@@ -1987,7 +1990,10 @@ namespace Vinos
 			public const int vinosActivity = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int vinosDetailActivity = 2130968619;
+			public const int vinosConfirmation = 2130968619;
+			
+			// aapt resource value: 0x7f04002c
+			public const int vinosDetailActivity = 2130968620;
 			
 			static Layout()
 			{
