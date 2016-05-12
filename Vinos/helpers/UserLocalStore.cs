@@ -63,7 +63,7 @@ namespace Vinos
 
 		}
 
-		public userDTO getLoggedInUser() {
+		public User getLoggedInUser() {
 			if (mSharedPrefs.GetBoolean("loggedIn", false) == false) {
 				return null;
 			}
