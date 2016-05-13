@@ -40,13 +40,13 @@ Las alertas serán generadas por medio de una aplicación en un smathphone, esto
 Se utilizo la siguiente tecnologia para el desarrollo de este proyecto:
 
 
-Hardware:
+**Hardware:**
 
 
 Acelerómetro lsm9ds0, ESPino - módulo ESP8266, Dispositivo móvil (Sistema operativo Android)
 
 
-Software:
+**Software:**
 
 
 Servidor web, API REST en PHP, Aplicación Android C#
