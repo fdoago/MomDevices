@@ -24,8 +24,6 @@ Ejemplos de lugares peligrosos incluyen: Sillones, camas de agua,sillas rellenas
 
 También puede ser causada por una mala posición como: Dormir elevado, dormir en un carrito de bebé con la cabeza cubierta, o con la cara contra una superficie suave, incluyendo el pecho de los padres, dormir de lado.
 
-### Diagrama de interacion.
-
 
 ### ¿Como funciona?
 
@@ -37,7 +35,20 @@ El acelerómetro va a monitorear la posición del bebé cuando este se encuentre
 
 Las alertas serán generadas por medio de una aplicación en un smathphone, esto para la detección inmediata de un posible movimiento inadecuado.
 
+
+
+
 ### Prototipo
+El diseño se hizo lo mas pequeño y funcional posible, cabe destacar que se utilizo un hilo conductor el cual nos ayudo a la adaptacion de una tecnologia vestible.
+
+
+En la sigueinte imagen observamos el prototipo y su implementacion.
+<img class="image-center" src="img/mom/1.JPG"  style="display:inline"/>
+<img class="image-center" src="img/mom/2.jpeg"/ style="display:inline">
+
+
+
+
 
 ### Repositorios
 
