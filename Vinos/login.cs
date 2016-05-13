@@ -12,7 +12,7 @@ using Vinos;
 
 namespace Vinos
 {
-	[Activity (Label = "Vinos", Theme = "@style/Theme.AppCompat.Light", Icon = "@mipmap/icon", MainLauncher = true)]			
+	[Activity (Label = "Vinos", Theme = "@style/Theme.AppCompat.Light", Icon = "@mipmap/icon")]			
 	public class login : Activity
 	{
 		private Intent MainActivityIntent;

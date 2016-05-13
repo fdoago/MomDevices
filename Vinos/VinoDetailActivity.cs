@@ -53,7 +53,7 @@ namespace Vinos
 			userLocalStore = new UserLocalStore(this);
 			userStorage = userLocalStore.getLoggedInUser();
 
-			img.SetImageBitmap (ImageHelper.GetImageBitmapFromUrl ("http://www.xpressclasificados.mx/images/uploads/d27f839a6fcd1101d92bf6e4aea285cef810d6f31454993619"));
+			img.SetImageBitmap (ImageHelper.GetImageBitmapFromUrl ("http://altonivel.impresionesaerea.netdna-cdn.com/images/Estructura_2015/Estilo_de_vida/Gastronomia/elegir-un-vino-alimento.jpg"));
 
 			name.Text = vino.name;
 			year.Text = vino.year;

@@ -94,16 +94,12 @@ namespace Vinos
 
 		public override bool OnCreateOptionsMenu (Android.Views.IMenu menu)
 		{
-
-			menu.Add(new Java.Lang.String ("Normal item"));
-
+			menu.Add(new Java.Lang.String ("Finalizar orden"));
 			var actionItem = menu.Add(new Java.Lang.String ("Action Button"));
-
 			// Items that show as actions should favor the "if room" setting, which will
 			// prevent too many buttons from crowding the bar. Extra items will show in the
 			// overflow area.
 			MenuItemCompat.SetShowAsAction(actionItem, MenuItemCompat.ShowAsActionIfRoom);
-
 			// Items that show as actions are strongly encouraged to use an icon.
 			// These icons are shown without a text description, and therefore should
 			// be sufficiently descriptive on their own.
@@ -113,7 +109,18 @@ namespace Vinos
 
 		public override bool OnOptionsItemSelected (Android.Views.IMenuItem item)
 		{
-			return true;
+			Toast.MakeText(this, "Top ActionBar pressed: " + item.TitleFormatted, ToastLength.Short).Show();
+			switch (item.ItemId) {
+			case 0:
+				ordenRequest ordenRequestObj = new ordenRequest();
+				ordenRequestObj.confirmOrder(order, userStorage.user_id);
+				Intent Main = new Intent (this, typeof(MainActivity));
+				break;
+			default:
+				break;
+			}
+			return base.OnOptionsItemSelected (item);
+
 		}
 	}
 }

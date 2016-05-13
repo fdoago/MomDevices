@@ -17,7 +17,7 @@ using Vinos.Models;
 
 namespace Vinos
 {
-	[Activity (Label = "Moms Deivces")]			
+	[Activity (Label = "Moms Deivces", MainLauncher = true	)]			
 	public class MomDeivcesActivity : Activity
 	{
 		String notifyMsg;
