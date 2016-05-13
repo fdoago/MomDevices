@@ -34,5 +34,5 @@ También puede ser causada por una mala posición como: Dormir elevado, dormir e
 ### Repositorios
 
 *Repositorio de la API [Ver repositorio](https://github.com/fdoago/MomDevices)
-* Repositorio de ESPino [Ver repositorio](https://github.com/fdoago/MomDevicesEspinoLuaSender)
+*Repositorio de ESPino [Ver repositorio](https://github.com/fdoago/MomDevicesEspinoLuaSender)
 
