@@ -36,7 +36,32 @@ El acelerómetro va a monitorear la posición del bebé cuando este se encuentre
 Las alertas serán generadas por medio de una aplicación en un smathphone, esto para la detección inmediata de un posible movimiento inadecuado.
 
 
+###Tecnologia 
+Se utilizo la siguiente tecnologia para el desarrollo de este proyecto:
 
+
+Hardware:
+
+
+*Acelerómetro lsm9ds0
+
+
+*Espino - módulo ESP8266 
+
+
+*Dispositivo móvil (Sistema operativo Android)
+
+
+Software:
+
+
+*Servidor web
+
+
+*API REST en PHP
+
+
+Aplicación Android C#
 
 ### Prototipo
 El diseño se hizo lo mas pequeño y funcional posible, cabe destacar que se utilizo un hilo conductor el cual nos ayudo a la adaptacion de una tecnologia vestible.
