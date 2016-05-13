@@ -63,9 +63,16 @@ En la siguiente imagen observamos el prototipo y su implementación.
 
 Vista de la aplicación.
 
-
+Se desarrollo para dispositivos con sistema operativo Android.
 <img class="image-center" src="img/mom/app1.JPG"  style="display:inline"/>
-<img class="image-center" src="img/mom/"/ style="display:inline">
+
+
+En la primera vista de la aplicación veremos los dispositivos agregados (ESPino´s) 
+<img class="image-center" src="img/mom/app3.jpeg"/ style="display:inline">
+
+
+Vista de la aplicación cuando la alerta se encuentra activa
+<img class="image-center" src="img/mom/app2.jpeg"/ style="display:inline">
 
 
 
