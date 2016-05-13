@@ -43,25 +43,14 @@ Se utilizo la siguiente tecnologia para el desarrollo de este proyecto:
 Hardware:
 
 
-  *Acelerómetro lsm9ds0
-
-
-  *Espino - módulo ESP8266 
-
-
-  *Dispositivo móvil (Sistema operativo Android)
+Acelerómetro lsm9ds0, ESPino - módulo ESP8266, Dispositivo móvil (Sistema operativo Android)
 
 
 Software:
 
 
-  *Servidor web
+Servidor web, API REST en PHP, Aplicación Android C#
 
-
-  *API REST en PHP
-
-
-  *Aplicación Android C#
 
 ### Prototipo
 El diseño se hizo lo mas pequeño y funcional posible, cabe destacar que se utilizo un hilo conductor el cual nos ayudo a la adaptacion de una tecnologia vestible.
@@ -72,7 +61,16 @@ En la sigueinte imagen observamos el prototipo y su implementacion.
 <img class="image-center" src="img/mom/2.jpeg"/ style="display:inline">
 
 
+Vista de la aplicacion.
 
+
+<img class="image-center" src="img/mom/app1.JPG"  style="display:inline"/>
+<img class="image-center" src="img/mom/"/ style="display:inline">
+
+
+
+### Activación de la alerta
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=2kjEEVfhhww&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
 
 
 ### Repositorios
