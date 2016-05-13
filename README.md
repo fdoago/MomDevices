@@ -53,15 +53,15 @@ Servidor web, API REST en PHP, Aplicación Android C#
 
 
 ### Prototipo
-El diseño se hizo lo mas pequeño y funcional posible, cabe destacar que se utilizo un hilo conductor el cual nos ayudo a la adaptacion de una tecnologia vestible.
+El diseño se hizo lo mas pequeño y funcional posible, cabe destacar que se utilizo un hilo conductor para ser adaptado como tecnologia vestible.
 
 
-En la sigueinte imagen observamos el prototipo y su implementacion.
+En la siguiente imagen observamos el prototipo y su implementación.
 <img class="image-center" src="img/mom/1.JPG"  style="display:inline"/>
 <img class="image-center" src="img/mom/2.jpeg"/ style="display:inline">
 
 
-Vista de la aplicacion.
+Vista de la aplicación.
 
 
 <img class="image-center" src="img/mom/app1.JPG"  style="display:inline"/>
