@@ -3,7 +3,7 @@ title:  "MOM"
 subtitle: "Mom's Online Monitor"
 author: "Fernando Agosto Cruz, Jishar Rodriguez Aguilar"
 avatar: "img/authors/wferr.png"
-image: "img/e.jpg"
+image: "img/mom/logo.png"
 date:   2016-05-13 11:15:00
 ---
 
