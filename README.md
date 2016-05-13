@@ -13,7 +13,7 @@ date:   2016-05-13 11:15:00
 
 Es un sensor de movimiento para la prevención del síndrome muerte súbita (SIDS) 
 
-### ¿Que es SIDS?
+### ¿Porque es un problema el SIDS?
 La muerte súbita del lactante es la principal causa de fallecimiento de los bebés menores de un año. Aún se desconoce a ciencia cierta su causa, aunque sí factores que la predisponen. Es decir, no hay forma de evitarla, aunque sí de prevenirla.
 
 La asfixia de posición ocurre cuando el bebé duerme, o se queda dormido en un lugar peligroso, o en una posición peligrosa. 
@@ -28,6 +28,14 @@ También puede ser causada por una mala posición como: Dormir elevado, dormir e
 
 
 ### ¿Como funciona?
+
+El dispositivo se encontrara adaptado a la ropa del bebe de tal forma que no presente un obstaculo al dormir, este se encontrara a la altura del estomago.
+
+
+El acelerómetro va a monitorear la posición del bebé cuando este se encuentre durmiendo, seguidamente lo datos serán enviados por medio de un dispositivo ESPino (módulo wifi), este dispositivo se conecta a la red wifi para enviar la información a una  API que se encuentra alojado en un servidor web  y así procesar la petición (guardar y actualización ).
+
+
+Las alertas serán generadas por medio de una aplicación en un smathphone, esto para la detección inmediata de un posible movimiento inadecuado.
 
 ### Prototipo
 
